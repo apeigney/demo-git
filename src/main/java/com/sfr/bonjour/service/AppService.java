@@ -11,4 +11,8 @@ public class AppService {
     public void start() {
         System.out.println("Starting application");
     }
+
+    public void stop() {
+        System.out.println("Stopping application");
+    }
 }
