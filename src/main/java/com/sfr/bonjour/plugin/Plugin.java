@@ -7,6 +7,7 @@ public class Plugin {
 
     private Integer id;
     private String name;
+    private PluginDefinition definition;
 
     public Integer getId() {
         return id;
@@ -22,5 +23,13 @@ public class Plugin {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public PluginDefinition getDefinition() {
+        return definition;
+    }
+
+    public void setDefinition(PluginDefinition definition) {
+        this.definition = definition;
     }
 }
