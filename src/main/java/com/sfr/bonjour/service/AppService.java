@@ -5,8 +5,6 @@ package com.sfr.bonjour.service;
  */
 public class AppService {
 
-    private final ResourceResolver resourceResolver = new ResourceResolver();
-
     public AppService() {
     }
 
@@ -18,7 +16,4 @@ public class AppService {
         System.out.println("Stopping application");
     }
 
-    public boolean mockEnabled() {
-        return resourceResolver.mockEnabled();
-    }
 }
