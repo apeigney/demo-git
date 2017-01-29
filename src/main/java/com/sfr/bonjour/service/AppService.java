@@ -15,4 +15,9 @@ public class AppService {
     public void stop() {
         System.out.println("Stopping application");
     }
+
+    public boolean mockEnabled() {
+        // TODO get real value from properties
+        return true;
+    }
 }
