@@ -5,6 +5,8 @@ package com.sfr.bonjour.service;
  */
 public class AppService {
 
+    private final ResourceResolver resourceResolver = new ResourceResolver();
+
     public AppService() {
     }
 
@@ -17,7 +19,6 @@ public class AppService {
     }
 
     public boolean mockEnabled() {
-        // TODO get real value from properties
-        return true;
+        return resourceResolver.mockEnabled();
     }
 }
