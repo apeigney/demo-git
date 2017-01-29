@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class AppService {
 
-    private final ResourceResolver resourceResolver = new ResourceResolver();
     private final PluginService pluginService = new PluginService();
 
     public void start() {
@@ -32,10 +31,6 @@ public class AppService {
 
     public void stop() {
         System.out.println("Stopping application");
-    }
-
-    public boolean mockEnabled() {
-        return resourceResolver.mockEnabled();
     }
 
     private void executePLugins() {
